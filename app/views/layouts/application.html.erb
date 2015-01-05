@@ -10,7 +10,12 @@
 <div id="banner">
   <%= image_tag("logo.png") %>
   <%= @page_title || "Pragmatic Bookshelf" %>
+  <div id="counter">
+    <h2><%= "Counter now is: #{session[:counter]}" if session[:counter]>5 %></h2>
+  </div>
+
 </div>
+
 <div id="columns">
     <div id="side">
       <ul>
